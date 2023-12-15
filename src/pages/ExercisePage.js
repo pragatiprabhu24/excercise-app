@@ -6,15 +6,22 @@ import { options, fetchData } from '../utils/fetchData';
 const ExercisePage = () => {
     const [excercises, setExcercises] = useState([]);
 
+
     useEffect(() => {
         const fetchExercisesData = async () => {
             let exercisesData = [];
+            const storedData = localStorage.getItem('excercisesData');
+            if (storedData) {
+                exercisesData = JSON.parse(storedData);
+            } else {
                 exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', options);
+
+            }
             setExcercises(exercisesData);
         };
-
         fetchExercisesData();
     }, []);
+
     return (
         <div class="container mx-auto px-5 py-10 lg:px-40  md:flex-row flex-col items-center">
             <div class="flex flex-wrap -m-4">

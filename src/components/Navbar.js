@@ -8,7 +8,7 @@ import logo from '../assets/images/Logo.png'
 
 const menu = [
     { name: 'Home', href: '/' },
- 
+
 ]
 
 
@@ -85,11 +85,8 @@ export default function Navbar() {
                                 ))}
                             </div>
                             <div className="py-6">
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >
-                                    Log in
+                                <a href="https://www.linkedin.com/in/pragati-prabhu-b3a4b51b2/" target='_blank' className="text-sm font-semibold leading-6 text-gray-900">
+                                    Contact me <span aria-hidden="true">&rarr;</span>
                                 </a>
                             </div>
                         </div>

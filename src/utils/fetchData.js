@@ -1,7 +1,7 @@
 export const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': process.env.REACT_APP_APT_KEY,
+    'X-RapidAPI-Key': 'bd1ec16a05msh29330374374591ap11d866jsne3360ba98180',
     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
   }
 };
@@ -9,7 +9,7 @@ export const options = {
 export const youtubeoptions = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': process.env.REACT_APP_APT_KEY,
+    'X-RapidAPI-Key': 'bd1ec16a05msh29330374374591ap11d866jsne3360ba98180',
     'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
   }
 };
